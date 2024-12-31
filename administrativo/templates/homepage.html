@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="style.css">
+{% endblock %}
+
+
+{% block body %}
+<main>
+    <nav>
+        <img src="{% static 'images/bmrh.png' %}" alt="">
+        <button>Sair do Sistema</button>
+        <ul>
+            <li>
+                <a href="#">Ficheiros</a>
+                <ul>
+                    <li>
+                        <a href="#">Tabela Utilizador</a>
+                    </li>
+                    <li>
+                        <a href="#">Tabela Empresa</a>
+                    </li>
+                    <li>
+                        <a href="#">Tabela Moeda</a>
+                    </li>
+                    <li>
+                        <a href="#">Tabela Função</a>
+                    </li>
+                    <li>
+                        <a href="#">Tabela Departamento</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Cadastro de Entidade</a>
+            </li>
+        </ul>
+                
+    </nav>
+    <section class="secao-containt">
+        <img src="{% static 'images/BM.png' %}" alt="">
+    </section>
+    <section class="secao-rodape">
+        Rodapé da página principal
+    </section>
+</main>
+{% endblock %}
